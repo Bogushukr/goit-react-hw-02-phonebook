@@ -43,10 +43,10 @@ class App extends React.Component {
     componentDidMount() {
         const parsedContacts = JSON.parse(localStorage.getItem('contacts'))
         const initialContacts = [
-            {id: 'id-1', name: 'Rosie Simpson', number: '459-12-56', sex: 'female'},
-            {id: 'id-2', name: 'Hermione Kline', number: '443-89-12', sex: 'female'},
-            {id: 'id-3', name: 'Eden Clements', number: '645-17-79', sex: 'male'},
-            {id: 'id-4', name: 'Annie Copeland', number: '227-91-26', sex: 'female'},
+            {id: 'id-1', name: 'Rosie Simpson', number: '459-12-56'},
+            {id: 'id-2', name: 'Hermione Kline', number: '443-89-12'},
+            {id: 'id-3', name: 'Eden Clements', number: '645-17-79'},
+            {id: 'id-4', name: 'Annie Copeland', number: '227-91-26'},
         ]
 
         if (parsedContacts) {
@@ -100,7 +100,6 @@ App.propTypes = {
             id: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
             number: PropTypes.string,
-            sex: PropTypes.bool.isRequired
         })
     )
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import s from "./InputForm.module.css";
 
 
-const InputForm = ({state: {name, number, sex}, handleChange, addContact}) => {
+const InputForm = ({state: {name, number}, handleChange, addContact}) => {
 
     return <div className={s.contactFormContainer}>
         <h3>Name</h3>
